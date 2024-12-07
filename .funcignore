@@ -1,8 +1,0 @@
-# Ignore files and directories not needed for local function run
-.git*
-.vscode
-__azurite_db*__.json
-__blobstorage__
-__queuestorage__
-test
-.venv
