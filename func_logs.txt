@@ -1,0 +1,639 @@
+Found Python version 3.11.5 (python).
+Selected out-of-process host.
+
+                  %%%%%%
+                 %%%%%%
+            @   %%%%%%    @
+          @@   %%%%%%      @@
+       @@@    %%%%%%%%%%%    @@@
+     @@      %%%%%%%%%%        @@
+       @@         %%%%       @@
+         @@      %%%       @@
+           @@    %%      @@
+                %%
+                %
+
+
+Azure Functions Core Tools
+Core Tools Version:       4.0.6543 Commit hash: N/A +a4bf0e412b43c659740d8db346fc44d6cdd62e45 (64-bit)
+Function Runtime Version: 4.1036.1.23224
+
+[2024-11-07T09:34:33.024Z] Building host: version spec: , startup suppressed: 'False', configuration suppressed: 'False', startup operation id: '2f855633-fc7e-42d8-8676-548ec968a356'
+[2024-11-07T09:34:33.032Z] Reading host configuration file 'C:\Users\LauraKhadas\Downloads\Azure\Azure Portfolio Projects\azure_text_to_speech_project_final\host.json'
+[2024-11-07T09:34:33.033Z] Host configuration file read:
+[2024-11-07T09:34:33.033Z] {
+[2024-11-07T09:34:33.034Z]   "version": "2.0",
+[2024-11-07T09:34:33.034Z]   "logging": {
+[2024-11-07T09:34:33.035Z]     "applicationInsights": {
+[2024-11-07T09:34:33.035Z]       "samplingSettings": {
+[2024-11-07T09:34:33.035Z]         "isEnabled": true,
+[2024-11-07T09:34:33.036Z]         "maxTelemetryItemsPerSecond": 20,
+[2024-11-07T09:34:33.036Z]         "excludedTypes": "Request;Exception"
+[2024-11-07T09:34:33.037Z]       }
+[2024-11-07T09:34:33.038Z]     }
+[2024-11-07T09:34:33.038Z]   },
+[2024-11-07T09:34:33.038Z]   "extensionBundle": {
+[2024-11-07T09:34:33.039Z]     "id": "Microsoft.Azure.Functions.ExtensionBundle",
+[2024-11-07T09:34:33.039Z]     "version": "[4.*, 5.0.0)"
+[2024-11-07T09:34:33.040Z]   }
+[2024-11-07T09:34:33.040Z] }
+[2024-11-07T09:34:33.064Z] FUNCTIONS_WORKER_RUNTIME set to python. Skipping WorkerConfig for language: java
+[2024-11-07T09:34:33.065Z] FUNCTIONS_WORKER_RUNTIME set to python. Skipping WorkerConfig for language: node
+[2024-11-07T09:34:33.066Z] FUNCTIONS_WORKER_RUNTIME set to python. Skipping WorkerConfig for language: powershell
+[2024-11-07T09:34:33.070Z] Looking for extension bundle Microsoft.Azure.Functions.ExtensionBundle at C:\Users\LauraKhadas\.azure-functions-core-tools\Functions\ExtensionBundles\Microsoft.Azure.Functions.ExtensionBundle
+[2024-11-07T09:34:33.071Z] Found a matching extension bundle at C:\Users\LauraKhadas\.azure-functions-core-tools\Functions\ExtensionBundles\Microsoft.Azure.Functions.ExtensionBundle\4.17.0
+[2024-11-07T09:34:33.077Z] Loading functions metadata
+[2024-11-07T09:34:33.078Z] Worker indexing is enabled
+[2024-11-07T09:34:33.080Z] Fetching metadata for workerRuntime: python
+[2024-11-07T09:34:33.080Z] Reading functions metadata (Worker)
+[2024-11-07T09:34:33.234Z]  INFO: Starting Azure Functions Python Worker.
+[2024-11-07T09:34:33.234Z]  INFO: Worker ID: 051e5411-75af-42e3-b9fa-931d3754c692, Request ID: 2f499dc0-28d9-47ba-82ed-d31fc4898fdc, Host Address: 127.0.0.1:50631
+[2024-11-07T09:34:33.448Z]  INFO: Successfully opened gRPC channel to 127.0.0.1:50631 
+[2024-11-07T09:34:33.449Z]  INFO: Detaching console logging.
+[2024-11-07T09:34:35.507Z] Switched to gRPC logging.
+[2024-11-07T09:34:35.519Z] Received WorkerInitRequest, python version 3.11.5 | packaged by Anaconda, Inc. | (main, Sep 11 2023, 13:26:23) [MSC v.1916 64 bit (AMD64)], worker version 4.31.0, request ID 2f499dc0-28d9-47ba-82ed-d31fc4898fdc. App Settings state: PYTHON_THREADPOOL_THREAD_COUNT: 1000 | PYTHON_ENABLE_WORKER_EXTENSIONS: False. To enable debug level logging, please refer to https://aka.ms/python-enable-debug-logging
+[2024-11-07T09:34:35.710Z] Received WorkerMetadataRequest, request ID 2f499dc0-28d9-47ba-82ed-d31fc4898fdc, function_path: C:\Users\LauraKhadas\Downloads\Azure\Azure Portfolio Projects\azure_text_to_speech_project_final\function_app.py
+[2024-11-07T09:34:35.735Z] Indexed function app and found 1 functions
+[2024-11-07T09:34:35.735Z] Successfully processed FunctionMetadataRequest for functions: Function Name: TextToSpeech, Function Binding: [('httpTrigger', 'req', ''), ('http', '$return', '')]. Deferred bindings enabled: False.
+[2024-11-07T09:34:35.741Z] 1 functions found (Worker)
+[2024-11-07T09:34:35.746Z] 1 functions loaded
+[2024-11-07T09:34:35.748Z] Looking for extension bundle Microsoft.Azure.Functions.ExtensionBundle at C:\Users\LauraKhadas\.azure-functions-core-tools\Functions\ExtensionBundles\Microsoft.Azure.Functions.ExtensionBundle
+[2024-11-07T09:34:35.748Z] Found a matching extension bundle at C:\Users\LauraKhadas\.azure-functions-core-tools\Functions\ExtensionBundles\Microsoft.Azure.Functions.ExtensionBundle\4.17.0
+[2024-11-07T09:34:35.749Z] Fetching information on versions of extension bundle Microsoft.Azure.Functions.ExtensionBundle available on https://functionscdn.azureedge.net/public/ExtensionBundles/Microsoft.Azure.Functions.ExtensionBundle/index.json
+[2024-11-07T09:34:35.873Z] Skipping bundle download since it already exists at path C:\Users\LauraKhadas\.azure-functions-core-tools\Functions\ExtensionBundles\Microsoft.Azure.Functions.ExtensionBundle\4.17.0
+[2024-11-07T09:34:35.876Z] Loading extension bundle from C:\Users\LauraKhadas\.azure-functions-core-tools\Functions\ExtensionBundles\Microsoft.Azure.Functions.ExtensionBundle\4.17.0\bin
+[2024-11-07T09:34:35.878Z] Script Startup resetting load context with base path: 'C:\Users\LauraKhadas\.azure-functions-core-tools\Functions\ExtensionBundles\Microsoft.Azure.Functions.ExtensionBundle\4.17.0\bin'.
+[2024-11-07T09:34:35.884Z] Reading host configuration file 'C:\Users\LauraKhadas\Downloads\Azure\Azure Portfolio Projects\azure_text_to_speech_project_final\host.json'
+[2024-11-07T09:34:35.885Z] Host configuration file read:
+[2024-11-07T09:34:35.885Z] {
+[2024-11-07T09:34:35.885Z]   "version": "2.0",
+[2024-11-07T09:34:35.886Z]   "logging": {
+[2024-11-07T09:34:35.886Z]     "applicationInsights": {
+[2024-11-07T09:34:35.886Z]       "samplingSettings": {
+[2024-11-07T09:34:35.886Z]         "isEnabled": true,
+[2024-11-07T09:34:35.887Z]         "maxTelemetryItemsPerSecond": 20,
+[2024-11-07T09:34:35.887Z]         "excludedTypes": "Request;Exception"
+[2024-11-07T09:34:35.887Z]       }
+[2024-11-07T09:34:35.887Z]     }
+[2024-11-07T09:34:35.888Z]   },
+[2024-11-07T09:34:35.888Z]   "extensionBundle": {
+[2024-11-07T09:34:35.888Z]     "id": "Microsoft.Azure.Functions.ExtensionBundle",
+[2024-11-07T09:34:35.888Z]     "version": "[4.*, 5.0.0)"
+[2024-11-07T09:34:35.889Z]   }
+[2024-11-07T09:34:35.889Z] }
+[2024-11-07T09:34:35.911Z] Starting host metrics provider.
+[2024-11-07T09:34:35.943Z] FUNCTIONS_WORKER_RUNTIME set to python. Skipping WorkerConfig for language: java
+[2024-11-07T09:34:35.944Z] FUNCTIONS_WORKER_RUNTIME set to python. Skipping WorkerConfig for language: node
+[2024-11-07T09:34:35.945Z] FUNCTIONS_WORKER_RUNTIME set to python. Skipping WorkerConfig for language: powershell
+[2024-11-07T09:34:35.946Z] FUNCTIONS_WORKER_RUNTIME set to python. Skipping WorkerConfig for language: java
+[2024-11-07T09:34:35.947Z] FUNCTIONS_WORKER_RUNTIME set to python. Skipping WorkerConfig for language: node
+[2024-11-07T09:34:35.947Z] FUNCTIONS_WORKER_RUNTIME set to python. Skipping WorkerConfig for language: powershell
+[2024-11-07T09:34:35.977Z] Initializing Warmup Extension.
+[2024-11-07T09:34:35.997Z] Initializing Host. OperationId: '2f855633-fc7e-42d8-8676-548ec968a356'.
+[2024-11-07T09:34:36.001Z] Host initialization: ConsecutiveErrors=0, StartupCount=1, OperationId=2f855633-fc7e-42d8-8676-548ec968a356
+[2024-11-07T09:34:36.017Z] LoggerFilterOptions
+[2024-11-07T09:34:36.018Z] {
+[2024-11-07T09:34:36.018Z]   "MinLevel": "None",
+[2024-11-07T09:34:36.018Z]   "Rules": [
+[2024-11-07T09:34:36.019Z]     {
+[2024-11-07T09:34:36.019Z]       "ProviderName": null,
+[2024-11-07T09:34:36.019Z]       "CategoryName": "Microsoft.Hosting.Lifetime",
+[2024-11-07T09:34:36.019Z]       "LogLevel": "None",
+[2024-11-07T09:34:36.020Z]       "Filter": null
+[2024-11-07T09:34:36.020Z]     },
+[2024-11-07T09:34:36.020Z]     {
+[2024-11-07T09:34:36.020Z]       "ProviderName": "Azure.Functions.Cli.Diagnostics.ColoredConsoleLoggerProvider",
+[2024-11-07T09:34:36.021Z]       "CategoryName": null,
+[2024-11-07T09:34:36.021Z]       "LogLevel": "None",
+[2024-11-07T09:34:36.021Z]       "Filter": null
+[2024-11-07T09:34:36.022Z]     },
+[2024-11-07T09:34:36.022Z]     {
+[2024-11-07T09:34:36.022Z]       "ProviderName": "Azure.Functions.Cli.Diagnostics.ColoredConsoleLoggerProvider",
+[2024-11-07T09:34:36.023Z]       "CategoryName": null,
+[2024-11-07T09:34:36.023Z]       "LogLevel": null,
+[2024-11-07T09:34:36.023Z]       "Filter": "<AddFilter>b__0"
+[2024-11-07T09:34:36.023Z]     },
+[2024-11-07T09:34:36.024Z]     {
+[2024-11-07T09:34:36.024Z]       "ProviderName": null,
+[2024-11-07T09:34:36.024Z]       "CategoryName": null,
+[2024-11-07T09:34:36.025Z]       "LogLevel": null,
+[2024-11-07T09:34:36.025Z]       "Filter": "<AddFilter>b__0"
+[2024-11-07T09:34:36.025Z]     },
+[2024-11-07T09:34:36.025Z]     {
+[2024-11-07T09:34:36.026Z]       "ProviderName": null,
+[2024-11-07T09:34:36.026Z]       "CategoryName": null,
+[2024-11-07T09:34:36.026Z]       "LogLevel": null,
+[2024-11-07T09:34:36.027Z]       "Filter": "<AddFilter>b__0"
+[2024-11-07T09:34:36.027Z]     },
+[2024-11-07T09:34:36.027Z]     {
+[2024-11-07T09:34:36.027Z]       "ProviderName": "Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics.SystemLoggerProvider",
+[2024-11-07T09:34:36.028Z]       "CategoryName": null,
+[2024-11-07T09:34:36.028Z]       "LogLevel": "None",
+[2024-11-07T09:34:36.028Z]       "Filter": null
+[2024-11-07T09:34:36.028Z]     },
+[2024-11-07T09:34:36.029Z]     {
+[2024-11-07T09:34:36.029Z]       "ProviderName": "Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics.SystemLoggerProvider",
+[2024-11-07T09:34:36.029Z]       "CategoryName": null,
+[2024-11-07T09:34:36.030Z]       "LogLevel": null,
+[2024-11-07T09:34:36.030Z]       "Filter": "<AddFilter>b__0"
+[2024-11-07T09:34:36.030Z]     },
+[2024-11-07T09:34:36.030Z]     {
+[2024-11-07T09:34:36.031Z]       "ProviderName": "Azure.Functions.Cli.Diagnostics.ColoredConsoleLoggerProvider",
+[2024-11-07T09:34:36.031Z]       "CategoryName": null,
+[2024-11-07T09:34:36.031Z]       "LogLevel": null,
+[2024-11-07T09:34:36.032Z]       "Filter": "<AddFilter>b__0"
+[2024-11-07T09:34:36.032Z]     }
+[2024-11-07T09:34:36.032Z]   ]
+[2024-11-07T09:34:36.033Z] }
+[2024-11-07T09:34:36.033Z] LoggerFilterOptions
+[2024-11-07T09:34:36.033Z] {
+[2024-11-07T09:34:36.034Z]   "MinLevel": "None",
+[2024-11-07T09:34:36.034Z]   "Rules": [
+[2024-11-07T09:34:36.034Z]     {
+[2024-11-07T09:34:36.034Z]       "ProviderName": null,
+[2024-11-07T09:34:36.035Z]       "CategoryName": "Microsoft.Hosting.Lifetime",
+[2024-11-07T09:34:36.035Z]       "LogLevel": "None",
+[2024-11-07T09:34:36.035Z]       "Filter": null
+[2024-11-07T09:34:36.036Z]     },
+[2024-11-07T09:34:36.036Z]     {
+[2024-11-07T09:34:36.036Z]       "ProviderName": "Azure.Functions.Cli.Diagnostics.ColoredConsoleLoggerProvider",
+[2024-11-07T09:34:36.036Z]       "CategoryName": null,
+[2024-11-07T09:34:36.037Z]       "LogLevel": "None",
+[2024-11-07T09:34:36.037Z]       "Filter": null
+[2024-11-07T09:34:36.037Z]     },
+[2024-11-07T09:34:36.038Z]     {
+[2024-11-07T09:34:36.038Z]       "ProviderName": "Azure.Functions.Cli.Diagnostics.ColoredConsoleLoggerProvider",
+[2024-11-07T09:34:36.038Z]       "CategoryName": null,
+[2024-11-07T09:34:36.038Z]       "LogLevel": null,
+[2024-11-07T09:34:36.039Z]       "Filter": "<AddFilter>b__0"
+[2024-11-07T09:34:36.039Z]     },
+[2024-11-07T09:34:36.039Z]     {
+[2024-11-07T09:34:36.040Z]       "ProviderName": null,
+[2024-11-07T09:34:36.040Z]       "CategoryName": null,
+[2024-11-07T09:34:36.040Z]       "LogLevel": null,
+[2024-11-07T09:34:36.040Z]       "Filter": "<AddFilter>b__0"
+[2024-11-07T09:34:36.041Z]     },
+[2024-11-07T09:34:36.041Z]     {
+[2024-11-07T09:34:36.041Z]       "ProviderName": null,
+[2024-11-07T09:34:36.042Z]       "CategoryName": null,
+[2024-11-07T09:34:36.042Z]       "LogLevel": null,
+[2024-11-07T09:34:36.042Z]       "Filter": "<AddFilter>b__0"
+[2024-11-07T09:34:36.043Z]     },
+[2024-11-07T09:34:36.043Z]     {
+[2024-11-07T09:34:36.043Z]       "ProviderName": "Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics.SystemLoggerProvider",
+[2024-11-07T09:34:36.043Z]       "CategoryName": null,
+[2024-11-07T09:34:36.044Z]       "LogLevel": "None",
+[2024-11-07T09:34:36.044Z]       "Filter": null
+[2024-11-07T09:34:36.044Z]     },
+[2024-11-07T09:34:36.044Z]     {
+[2024-11-07T09:34:36.045Z]       "ProviderName": "Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics.SystemLoggerProvider",
+[2024-11-07T09:34:36.045Z]       "CategoryName": null,
+[2024-11-07T09:34:36.045Z]       "LogLevel": null,
+[2024-11-07T09:34:36.046Z]       "Filter": "<AddFilter>b__0"
+[2024-11-07T09:34:36.046Z]     },
+[2024-11-07T09:34:36.046Z]     {
+[2024-11-07T09:34:36.047Z]       "ProviderName": "Azure.Functions.Cli.Diagnostics.ColoredConsoleLoggerProvider",
+[2024-11-07T09:34:36.047Z]       "CategoryName": null,
+[2024-11-07T09:34:36.047Z]       "LogLevel": null,
+[2024-11-07T09:34:36.048Z]       "Filter": "<AddFilter>b__0"
+[2024-11-07T09:34:36.048Z]     }
+[2024-11-07T09:34:36.048Z]   ]
+[2024-11-07T09:34:36.048Z] }
+[2024-11-07T09:34:36.049Z] LanguageWorkerOptions
+[2024-11-07T09:34:36.049Z] {
+[2024-11-07T09:34:36.049Z]   "WorkerConfigs": [
+[2024-11-07T09:34:36.050Z]     {
+[2024-11-07T09:34:36.050Z]       "Description": {
+[2024-11-07T09:34:36.050Z]         "Language": "python",
+[2024-11-07T09:34:36.051Z]         "DefaultRuntimeName": null,
+[2024-11-07T09:34:36.051Z]         "DefaultRuntimeVersion": "3.11",
+[2024-11-07T09:34:36.051Z]         "SupportedArchitectures": [
+[2024-11-07T09:34:36.051Z]           "X64",
+[2024-11-07T09:34:36.052Z]           "X86",
+[2024-11-07T09:34:36.052Z]           "Arm64"
+[2024-11-07T09:34:36.052Z]         ],
+[2024-11-07T09:34:36.053Z]         "SupportedOperatingSystems": [
+[2024-11-07T09:34:36.053Z]           "LINUX",
+[2024-11-07T09:34:36.053Z]           "OSX",
+[2024-11-07T09:34:36.053Z]           "WINDOWS"
+[2024-11-07T09:34:36.054Z]         ],
+[2024-11-07T09:34:36.054Z]         "SupportedRuntimeVersions": [
+[2024-11-07T09:34:36.054Z]           "3.7",
+[2024-11-07T09:34:36.055Z]           "3.8",
+[2024-11-07T09:34:36.055Z]           "3.9",
+[2024-11-07T09:34:36.055Z]           "3.10",
+[2024-11-07T09:34:36.055Z]           "3.11",
+[2024-11-07T09:34:36.056Z]           "3.12"
+[2024-11-07T09:34:36.056Z]         ],
+[2024-11-07T09:34:36.057Z]         "SanitizeRuntimeVersionRegex": null,
+[2024-11-07T09:34:36.057Z]         "WorkerIndexing": "true",
+[2024-11-07T09:34:36.057Z]         "Extensions": [
+[2024-11-07T09:34:36.057Z]           ".py"
+[2024-11-07T09:34:36.058Z]         ],
+[2024-11-07T09:34:36.058Z]         "UseStdErrorStreamForErrorsOnly": false,
+[2024-11-07T09:34:36.058Z]         "DefaultExecutablePath": "python",
+[2024-11-07T09:34:36.059Z]         "DefaultWorkerPath": "C:\\Program Files\\Microsoft\\Azure Functions Core Tools\\workers\\python\\3.11/WINDOWS/X64/worker.py",
+[2024-11-07T09:34:36.059Z]         "WorkerDirectory": "C:\\Program Files\\Microsoft\\Azure Functions Core Tools\\workers\\python",
+[2024-11-07T09:34:36.059Z]         "Arguments": [],
+[2024-11-07T09:34:36.059Z]         "WorkerArguments": null,
+[2024-11-07T09:34:36.060Z]         "IsDisabled": null
+[2024-11-07T09:34:36.060Z]       },
+[2024-11-07T09:34:36.060Z]       "Arguments": {
+[2024-11-07T09:34:36.061Z]         "ExecutablePath": "python",
+[2024-11-07T09:34:36.061Z]         "ExecutableArguments": [],
+[2024-11-07T09:34:36.061Z]         "WorkerPath": "C:\\Program Files\\Microsoft\\Azure Functions Core Tools\\workers\\python\\3.11/WINDOWS/X64/worker.py",
+[2024-11-07T09:34:36.061Z]         "WorkerArguments": []
+[2024-11-07T09:34:36.062Z]       },
+[2024-11-07T09:34:36.062Z]       "CountOptions": {
+[2024-11-07T09:34:36.062Z]         "SetProcessCountToNumberOfCpuCores": false,
+[2024-11-07T09:34:36.063Z]         "ProcessCount": 1,
+[2024-11-07T09:34:36.063Z]         "MaxProcessCount": 10,
+[2024-11-07T09:34:36.063Z]         "ProcessStartupInterval": "00:00:10",
+[2024-11-07T09:34:36.063Z]         "ProcessStartupTimeout": "00:01:00",
+[2024-11-07T09:34:36.064Z]         "InitializationTimeout": "00:00:10",
+[2024-11-07T09:34:36.064Z]         "EnvironmentReloadTimeout": "00:00:30",
+[2024-11-07T09:34:36.064Z]         "ProcessRestartInterval": "00:00:10",
+[2024-11-07T09:34:36.065Z]         "ProcessShutdownTimeout": "00:00:10"
+[2024-11-07T09:34:36.065Z]       }
+[2024-11-07T09:34:36.065Z]     }
+[2024-11-07T09:34:36.066Z]   ]
+[2024-11-07T09:34:36.066Z] }
+[2024-11-07T09:34:36.066Z] FunctionResultAggregatorOptions
+[2024-11-07T09:34:36.066Z] {
+[2024-11-07T09:34:36.067Z]   "BatchSize": 1000,
+[2024-11-07T09:34:36.067Z]   "FlushTimeout": "00:00:30",
+[2024-11-07T09:34:36.067Z]   "IsEnabled": true
+[2024-11-07T09:34:36.068Z] }
+[2024-11-07T09:34:36.068Z] ConcurrencyOptions
+[2024-11-07T09:34:36.068Z] {
+[2024-11-07T09:34:36.069Z]   "DynamicConcurrencyEnabled": false,
+[2024-11-07T09:34:36.069Z]   "MaximumFunctionConcurrency": 500,
+[2024-11-07T09:34:36.069Z]   "CPUThreshold": 0.8,
+[2024-11-07T09:34:36.069Z]   "SnapshotPersistenceEnabled": true
+[2024-11-07T09:34:36.070Z] }
+[2024-11-07T09:34:36.070Z] SingletonOptions
+[2024-11-07T09:34:36.070Z] {
+[2024-11-07T09:34:36.071Z]   "LockPeriod": "00:00:15",
+[2024-11-07T09:34:36.071Z]   "ListenerLockPeriod": "00:00:15",
+[2024-11-07T09:34:36.071Z]   "LockAcquisitionTimeout": "10675199.02:48:05.4775807",
+[2024-11-07T09:34:36.071Z]   "LockAcquisitionPollingInterval": "00:00:05",
+[2024-11-07T09:34:36.072Z]   "ListenerLockRecoveryPollingInterval": "00:01:00"
+[2024-11-07T09:34:36.072Z] }
+[2024-11-07T09:34:36.072Z] ScaleOptions
+[2024-11-07T09:34:36.073Z] {
+[2024-11-07T09:34:36.073Z]   "ScaleMetricsMaxAge": "00:02:00",
+[2024-11-07T09:34:36.073Z]   "ScaleMetricsSampleInterval": "00:00:10",
+[2024-11-07T09:34:36.074Z]   "MetricsPurgeEnabled": true,
+[2024-11-07T09:34:36.074Z]   "IsTargetScalingEnabled": true,
+[2024-11-07T09:34:36.074Z]   "IsRuntimeScalingEnabled": false
+[2024-11-07T09:34:36.075Z] }
+[2024-11-07T09:34:36.076Z] Starting JobHost
+[2024-11-07T09:34:36.078Z] Starting Host (HostId=desktopj6mml19-2034108659, InstanceId=3a27484f-a978-45c7-968a-36f432086a7c, Version=4.1036.1.23224, ProcessId=34420, AppDomainId=1, InDebugMode=False, InDiagnosticMode=False, FunctionsExtensionVersion=(null))
+[2024-11-07T09:34:36.080Z] Loading functions metadata
+[2024-11-07T09:34:36.081Z] Worker indexing is enabled
+[2024-11-07T09:34:36.081Z] Fetching metadata for workerRuntime: python
+[2024-11-07T09:34:36.081Z] Reading functions metadata (Worker)
+[2024-11-07T09:34:36.084Z] Reading functions metadata (Custom)
+[2024-11-07T09:34:36.088Z] 0 functions found (Custom)
+[2024-11-07T09:34:36.090Z] 1 functions loaded
+[2024-11-07T09:34:36.107Z] Generating 1 job function(s)
+[2024-11-07T09:34:36.108Z] Worker process started and initialized.
+[2024-11-07T09:34:36.108Z] Received WorkerLoadRequest, request ID 2f499dc0-28d9-47ba-82ed-d31fc4898fdc, function_id: 757a0008-59d9-5d89-92d6-4b0e7c194baf,function_name: TextToSpeech, function_app_directory : C:\Users\LauraKhadas\Downloads\Azure\Azure Portfolio Projects\azure_text_to_speech_project_final[2024-11-07T09:34:36.109Z] Successfully processed FunctionLoadRequest, request ID: 2f499dc0-28d9-47ba-82ed-d31fc4898fdc, function ID: 757a0008-59d9-5d89-92d6-4b0e7c194baf,function Name: TextToSpeech,programming model: V2
+
+[2024-11-07T09:34:36.127Z] Found the following functions:
+[2024-11-07T09:34:36.127Z] Host.Functions.TextToSpeech
+[2024-11-07T09:34:36.127Z] 
+[2024-11-07T09:34:36.132Z] HttpOptions
+[2024-11-07T09:34:36.132Z] Initializing function HTTP routes
+[2024-11-07T09:34:36.133Z] {
+[2024-11-07T09:34:36.134Z] Mapped function route 'api/TextToSpeech' [POST] to 'TextToSpeech'
+[2024-11-07T09:34:36.134Z]   "DynamicThrottlesEnabled": false,
+[2024-11-07T09:34:36.134Z] 
+[2024-11-07T09:34:36.135Z]   "EnableChunkedRequestBinding": false,
+[2024-11-07T09:34:36.135Z]   "MaxConcurrentRequests": -1,
+[2024-11-07T09:34:36.136Z]   "MaxOutstandingRequests": -1,
+[2024-11-07T09:34:36.136Z]   "RoutePrefix": "api"
+[2024-11-07T09:34:36.136Z] }
+[2024-11-07T09:34:36.138Z] Host initialized (56ms)
+[2024-11-07T09:34:36.140Z] Host started (61ms)
+[2024-11-07T09:34:36.140Z] Job host started
+
+Functions:
+
+	TextToSpeech: [POST] http://localhost:7076/api/TextToSpeech
+
+[2024-11-07T09:35:35.744Z] Detected mixed function app. Some functions may not be indexed - .vscode Refer to the documentation to filter warning - https://docs.microsoft.com/en-us/azure/azure-functions/configure-monitoring?tabs=v2
+[2024-11-07T09:35:58.840Z] Executing HTTP request: {
+[2024-11-07T09:35:58.840Z]   "requestId": "4f434f71-7e70-4b13-8111-3a82949f61d4",
+[2024-11-07T09:35:58.841Z]   "method": "POST",
+[2024-11-07T09:35:58.841Z]   "userAgent": "curl/8.10.1",
+[2024-11-07T09:35:58.841Z]   "uri": "/TextToSpeech"
+[2024-11-07T09:35:58.841Z] }
+[2024-11-07T09:35:58.880Z] Executed HTTP request: {
+[2024-11-07T09:35:58.881Z]   "requestId": "4f434f71-7e70-4b13-8111-3a82949f61d4",
+[2024-11-07T09:35:58.881Z]   "identities": "",
+[2024-11-07T09:35:58.881Z]   "status": "404",
+[2024-11-07T09:35:58.882Z]   "duration": "40"
+[2024-11-07T09:35:58.882Z] }
+[2024-11-07T09:43:19.208Z] Directory change of type 'Deleted' detected for 'C:\Users\LauraKhadas\Downloads\Azure\Azure Portfolio Projects\azure_text_to_speech_project_final\.vscode'
+[2024-11-07T09:43:19.209Z] Host configuration has changed. Signaling restart
+[2024-11-07T09:43:19.715Z] Restarting host.
+[2024-11-07T09:43:19.730Z] Stopping JobHost
+[2024-11-07T09:43:19.735Z] Job host stopped
+[2024-11-07T09:43:19.753Z] Building host: version spec: , startup suppressed: 'False', configuration suppressed: 'False', startup operation id: 'd16234f9-55d3-43c4-a528-179eb44464da'
+[2024-11-07T09:43:19.755Z] Reading host configuration file 'C:\Users\LauraKhadas\Downloads\Azure\Azure Portfolio Projects\azure_text_to_speech_project_final\host.json'
+[2024-11-07T09:43:19.756Z] Host configuration file read:
+[2024-11-07T09:43:19.756Z] {
+[2024-11-07T09:43:19.757Z]   "version": "2.0",
+[2024-11-07T09:43:19.759Z]   "logging": {
+[2024-11-07T09:43:19.760Z]     "applicationInsights": {
+[2024-11-07T09:43:19.763Z]       "samplingSettings": {
+[2024-11-07T09:43:19.763Z]         "isEnabled": true,
+[2024-11-07T09:43:19.764Z]         "maxTelemetryItemsPerSecond": 20,
+[2024-11-07T09:43:19.765Z]         "excludedTypes": "Request;Exception"
+[2024-11-07T09:43:19.766Z]       }
+[2024-11-07T09:43:19.767Z]     }
+[2024-11-07T09:43:19.767Z]   },
+[2024-11-07T09:43:19.768Z]   "extensionBundle": {
+[2024-11-07T09:43:19.769Z]     "id": "Microsoft.Azure.Functions.ExtensionBundle",
+[2024-11-07T09:43:19.770Z]     "version": "[4.*, 5.0.0)"
+[2024-11-07T09:43:19.771Z]   }
+[2024-11-07T09:43:19.772Z] }
+[2024-11-07T09:43:19.776Z] Looking for extension bundle Microsoft.Azure.Functions.ExtensionBundle at C:\Users\LauraKhadas\.azure-functions-core-tools\Functions\ExtensionBundles\Microsoft.Azure.Functions.ExtensionBundle
+[2024-11-07T09:43:19.778Z] Found a matching extension bundle at C:\Users\LauraKhadas\.azure-functions-core-tools\Functions\ExtensionBundles\Microsoft.Azure.Functions.ExtensionBundle\4.17.0
+[2024-11-07T09:43:19.780Z] Loading functions metadata
+[2024-11-07T09:43:19.781Z] Worker indexing is enabled
+[2024-11-07T09:43:19.783Z] Fetching metadata for workerRuntime: python
+[2024-11-07T09:43:19.784Z] Reading functions metadata (Worker)
+[2024-11-07T09:43:19.786Z] Shutting down language worker channels for runtime:python
+[2024-11-07T09:43:20.001Z]  INFO: Starting Azure Functions Python Worker.
+[2024-11-07T09:43:20.002Z]  INFO: Worker ID: ce241f0a-217e-478a-9072-3437e9c7a95f, Request ID: c9579a3b-52e3-44e9-ac53-0d16b775a4d1, Host Address: 127.0.0.1:50631
+[2024-11-07T09:43:20.283Z]  INFO: Successfully opened gRPC channel to 127.0.0.1:50631 
+[2024-11-07T09:43:20.284Z]  INFO: Detaching console logging.
+[2024-11-07T09:43:20.285Z] Switched to gRPC logging.
+[2024-11-07T09:43:20.286Z] Received WorkerInitRequest, python version 3.11.5 | packaged by Anaconda, Inc. | (main, Sep 11 2023, 13:26:23) [MSC v.1916 64 bit (AMD64)], worker version 4.31.0, request ID c9579a3b-52e3-44e9-ac53-0d16b775a4d1. App Settings state: PYTHON_THREADPOOL_THREAD_COUNT: 1000 | PYTHON_ENABLE_WORKER_EXTENSIONS: False. To enable debug level logging, please refer to https://aka.ms/python-enable-debug-logging
+[2024-11-07T09:43:20.500Z] Received WorkerMetadataRequest, request ID c9579a3b-52e3-44e9-ac53-0d16b775a4d1, function_path: C:\Users\LauraKhadas\Downloads\Azure\Azure Portfolio Projects\azure_text_to_speech_project_final\function_app.py
+[2024-11-07T09:43:20.537Z] Indexed function app and found 1 functions
+[2024-11-07T09:43:20.538Z] Successfully processed FunctionMetadataRequest for functions: Function Name: TextToSpeech, Function Binding: [('httpTrigger', 'req', ''), ('http', '$return', '')]. Deferred bindings enabled: False.
+[2024-11-07T09:43:20.538Z] 1 functions found (Worker)
+[2024-11-07T09:43:20.540Z] 1 functions loaded
+[2024-11-07T09:43:20.541Z] Looking for extension bundle Microsoft.Azure.Functions.ExtensionBundle at C:\Users\LauraKhadas\.azure-functions-core-tools\Functions\ExtensionBundles\Microsoft.Azure.Functions.ExtensionBundle
+[2024-11-07T09:43:20.542Z] Found a matching extension bundle at C:\Users\LauraKhadas\.azure-functions-core-tools\Functions\ExtensionBundles\Microsoft.Azure.Functions.ExtensionBundle\4.17.0
+[2024-11-07T09:43:20.543Z] Fetching information on versions of extension bundle Microsoft.Azure.Functions.ExtensionBundle available on https://functionscdn.azureedge.net/public/ExtensionBundles/Microsoft.Azure.Functions.ExtensionBundle/index.json
+[2024-11-07T09:43:20.664Z] Skipping bundle download since it already exists at path C:\Users\LauraKhadas\.azure-functions-core-tools\Functions\ExtensionBundles\Microsoft.Azure.Functions.ExtensionBundle\4.17.0
+[2024-11-07T09:43:20.665Z] Loading extension bundle from C:\Users\LauraKhadas\.azure-functions-core-tools\Functions\ExtensionBundles\Microsoft.Azure.Functions.ExtensionBundle\4.17.0\bin
+[2024-11-07T09:43:20.666Z] Script Startup resetting load context with base path: 'C:\Users\LauraKhadas\.azure-functions-core-tools\Functions\ExtensionBundles\Microsoft.Azure.Functions.ExtensionBundle\4.17.0\bin'.
+[2024-11-07T09:43:20.670Z] Reading host configuration file 'C:\Users\LauraKhadas\Downloads\Azure\Azure Portfolio Projects\azure_text_to_speech_project_final\host.json'
+[2024-11-07T09:43:20.675Z] Host configuration file read:
+[2024-11-07T09:43:20.675Z] {
+[2024-11-07T09:43:20.676Z]   "version": "2.0",
+[2024-11-07T09:43:20.676Z]   "logging": {
+[2024-11-07T09:43:20.677Z]     "applicationInsights": {
+[2024-11-07T09:43:20.677Z]       "samplingSettings": {
+[2024-11-07T09:43:20.678Z]         "isEnabled": true,
+[2024-11-07T09:43:20.678Z]         "maxTelemetryItemsPerSecond": 20,
+[2024-11-07T09:43:20.679Z]         "excludedTypes": "Request;Exception"
+[2024-11-07T09:43:20.679Z]       }
+[2024-11-07T09:43:20.680Z]     }
+[2024-11-07T09:43:20.680Z]   },
+[2024-11-07T09:43:20.681Z]   "extensionBundle": {
+[2024-11-07T09:43:20.682Z]     "id": "Microsoft.Azure.Functions.ExtensionBundle",
+[2024-11-07T09:43:20.683Z]     "version": "[4.*, 5.0.0)"
+[2024-11-07T09:43:20.683Z]   }
+[2024-11-07T09:43:20.684Z] }
+[2024-11-07T09:43:20.698Z] FUNCTIONS_WORKER_RUNTIME set to python. Skipping WorkerConfig for language: java
+[2024-11-07T09:43:20.700Z] FUNCTIONS_WORKER_RUNTIME set to python. Skipping WorkerConfig for language: node
+[2024-11-07T09:43:20.701Z] FUNCTIONS_WORKER_RUNTIME set to python. Skipping WorkerConfig for language: powershell
+[2024-11-07T09:43:20.703Z] FUNCTIONS_WORKER_RUNTIME set to python. Skipping WorkerConfig for language: java
+[2024-11-07T09:43:20.704Z] FUNCTIONS_WORKER_RUNTIME set to python. Skipping WorkerConfig for language: node
+[2024-11-07T09:43:20.705Z] FUNCTIONS_WORKER_RUNTIME set to python. Skipping WorkerConfig for language: powershell
+[2024-11-07T09:43:20.711Z] Initializing Warmup Extension.
+[2024-11-07T09:43:20.717Z] Initializing Host. OperationId: 'd16234f9-55d3-43c4-a528-179eb44464da'.
+[2024-11-07T09:43:20.718Z] Host initialization: ConsecutiveErrors=0, StartupCount=2, OperationId=d16234f9-55d3-43c4-a528-179eb44464da
+[2024-11-07T09:43:20.724Z] LoggerFilterOptions
+[2024-11-07T09:43:20.725Z] {
+[2024-11-07T09:43:20.725Z]   "MinLevel": "None",
+[2024-11-07T09:43:20.726Z]   "Rules": [
+[2024-11-07T09:43:20.727Z]     {
+[2024-11-07T09:43:20.727Z]       "ProviderName": null,
+[2024-11-07T09:43:20.728Z]       "CategoryName": "Microsoft.Hosting.Lifetime",
+[2024-11-07T09:43:20.728Z]       "LogLevel": "None",
+[2024-11-07T09:43:20.729Z]       "Filter": null
+[2024-11-07T09:43:20.729Z]     },
+[2024-11-07T09:43:20.730Z]     {
+[2024-11-07T09:43:20.730Z]       "ProviderName": "Azure.Functions.Cli.Diagnostics.ColoredConsoleLoggerProvider",
+[2024-11-07T09:43:20.731Z]       "CategoryName": null,
+[2024-11-07T09:43:20.732Z]       "LogLevel": "None",
+[2024-11-07T09:43:20.733Z]       "Filter": null
+[2024-11-07T09:43:20.734Z]     },
+[2024-11-07T09:43:20.734Z]     {
+[2024-11-07T09:43:20.735Z]       "ProviderName": "Azure.Functions.Cli.Diagnostics.ColoredConsoleLoggerProvider",
+[2024-11-07T09:43:20.735Z]       "CategoryName": null,
+[2024-11-07T09:43:20.736Z]       "LogLevel": null,
+[2024-11-07T09:43:20.736Z]       "Filter": "<AddFilter>b__0"
+[2024-11-07T09:43:20.737Z]     },
+[2024-11-07T09:43:20.738Z]     {
+[2024-11-07T09:43:20.738Z]       "ProviderName": null,
+[2024-11-07T09:43:20.739Z]       "CategoryName": null,
+[2024-11-07T09:43:20.739Z]       "LogLevel": null,
+[2024-11-07T09:43:20.740Z]       "Filter": "<AddFilter>b__0"
+[2024-11-07T09:43:20.740Z]     },
+[2024-11-07T09:43:20.741Z]     {
+[2024-11-07T09:43:20.741Z]       "ProviderName": null,
+[2024-11-07T09:43:20.742Z]       "CategoryName": null,
+[2024-11-07T09:43:20.743Z]       "LogLevel": null,
+[2024-11-07T09:43:20.743Z]       "Filter": "<AddFilter>b__0"
+[2024-11-07T09:43:20.744Z]     },
+[2024-11-07T09:43:20.745Z]     {
+[2024-11-07T09:43:20.745Z]       "ProviderName": "Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics.SystemLoggerProvider",
+[2024-11-07T09:43:20.746Z]       "CategoryName": null,
+[2024-11-07T09:43:20.747Z]       "LogLevel": "None",
+[2024-11-07T09:43:20.748Z]       "Filter": null
+[2024-11-07T09:43:20.749Z]     },
+[2024-11-07T09:43:20.749Z]     {
+[2024-11-07T09:43:20.750Z]       "ProviderName": "Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics.SystemLoggerProvider",
+[2024-11-07T09:43:20.751Z]       "CategoryName": null,
+[2024-11-07T09:43:20.752Z]       "LogLevel": null,
+[2024-11-07T09:43:20.752Z]       "Filter": "<AddFilter>b__0"
+[2024-11-07T09:43:20.753Z]     },
+[2024-11-07T09:43:20.753Z]     {
+[2024-11-07T09:43:20.754Z]       "ProviderName": "Azure.Functions.Cli.Diagnostics.ColoredConsoleLoggerProvider",
+[2024-11-07T09:43:20.754Z]       "CategoryName": null,
+[2024-11-07T09:43:20.755Z]       "LogLevel": null,
+[2024-11-07T09:43:20.755Z]       "Filter": "<AddFilter>b__0"
+[2024-11-07T09:43:20.756Z]     }
+[2024-11-07T09:43:20.756Z]   ]
+[2024-11-07T09:43:20.757Z] }
+[2024-11-07T09:43:20.758Z] LoggerFilterOptions
+[2024-11-07T09:43:20.758Z] {
+[2024-11-07T09:43:20.759Z]   "MinLevel": "None",
+[2024-11-07T09:43:20.759Z]   "Rules": [
+[2024-11-07T09:43:20.760Z]     {
+[2024-11-07T09:43:20.760Z]       "ProviderName": null,
+[2024-11-07T09:43:20.761Z]       "CategoryName": "Microsoft.Hosting.Lifetime",
+[2024-11-07T09:43:20.761Z]       "LogLevel": "None",
+[2024-11-07T09:43:20.762Z]       "Filter": null
+[2024-11-07T09:43:20.763Z]     },
+[2024-11-07T09:43:20.763Z]     {
+[2024-11-07T09:43:20.764Z]       "ProviderName": "Azure.Functions.Cli.Diagnostics.ColoredConsoleLoggerProvider",
+[2024-11-07T09:43:20.764Z]       "CategoryName": null,
+[2024-11-07T09:43:20.765Z]       "LogLevel": "None",
+[2024-11-07T09:43:20.766Z]       "Filter": null
+[2024-11-07T09:43:20.767Z]     },
+[2024-11-07T09:43:20.767Z]     {
+[2024-11-07T09:43:20.768Z]       "ProviderName": "Azure.Functions.Cli.Diagnostics.ColoredConsoleLoggerProvider",
+[2024-11-07T09:43:20.769Z]       "CategoryName": null,
+[2024-11-07T09:43:20.769Z]       "LogLevel": null,
+[2024-11-07T09:43:20.770Z]       "Filter": "<AddFilter>b__0"
+[2024-11-07T09:43:20.770Z]     },
+[2024-11-07T09:43:20.771Z]     {
+[2024-11-07T09:43:20.771Z]       "ProviderName": null,
+[2024-11-07T09:43:20.772Z]       "CategoryName": null,
+[2024-11-07T09:43:20.772Z]       "LogLevel": null,
+[2024-11-07T09:43:20.773Z]       "Filter": "<AddFilter>b__0"
+[2024-11-07T09:43:20.773Z]     },
+[2024-11-07T09:43:20.774Z]     {
+[2024-11-07T09:43:20.774Z]       "ProviderName": null,
+[2024-11-07T09:43:20.775Z]       "CategoryName": null,
+[2024-11-07T09:43:20.775Z]       "LogLevel": null,
+[2024-11-07T09:43:20.776Z]       "Filter": "<AddFilter>b__0"
+[2024-11-07T09:43:20.776Z]     },
+[2024-11-07T09:43:20.777Z]     {
+[2024-11-07T09:43:20.777Z]       "ProviderName": "Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics.SystemLoggerProvider",
+[2024-11-07T09:43:20.778Z]       "CategoryName": null,
+[2024-11-07T09:43:20.779Z]       "LogLevel": "None",
+[2024-11-07T09:43:20.779Z]       "Filter": null
+[2024-11-07T09:43:20.780Z]     },
+[2024-11-07T09:43:20.780Z]     {
+[2024-11-07T09:43:20.781Z]       "ProviderName": "Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics.SystemLoggerProvider",
+[2024-11-07T09:43:20.781Z]       "CategoryName": null,
+[2024-11-07T09:43:20.782Z]       "LogLevel": null,
+[2024-11-07T09:43:20.783Z]       "Filter": "<AddFilter>b__0"
+[2024-11-07T09:43:20.784Z]     },
+[2024-11-07T09:43:20.785Z]     {
+[2024-11-07T09:43:20.785Z]       "ProviderName": "Azure.Functions.Cli.Diagnostics.ColoredConsoleLoggerProvider",
+[2024-11-07T09:43:20.786Z]       "CategoryName": null,
+[2024-11-07T09:43:20.787Z]       "LogLevel": null,
+[2024-11-07T09:43:20.787Z]       "Filter": "<AddFilter>b__0"
+[2024-11-07T09:43:20.788Z]     }
+[2024-11-07T09:43:20.788Z]   ]
+[2024-11-07T09:43:20.789Z] }
+[2024-11-07T09:43:20.790Z] LanguageWorkerOptions
+[2024-11-07T09:43:20.791Z] {
+[2024-11-07T09:43:20.791Z]   "WorkerConfigs": [
+[2024-11-07T09:43:20.792Z]     {
+[2024-11-07T09:43:20.792Z]       "Description": {
+[2024-11-07T09:43:20.793Z]         "Language": "python",
+[2024-11-07T09:43:20.793Z]         "DefaultRuntimeName": null,
+[2024-11-07T09:43:20.794Z]         "DefaultRuntimeVersion": "3.11",
+[2024-11-07T09:43:20.794Z]         "SupportedArchitectures": [
+[2024-11-07T09:43:20.794Z]           "X64",
+[2024-11-07T09:43:20.795Z]           "X86",
+[2024-11-07T09:43:20.795Z]           "Arm64"
+[2024-11-07T09:43:20.796Z]         ],
+[2024-11-07T09:43:20.796Z]         "SupportedOperatingSystems": [
+[2024-11-07T09:43:20.796Z]           "LINUX",
+[2024-11-07T09:43:20.797Z]           "OSX",
+[2024-11-07T09:43:20.797Z]           "WINDOWS"
+[2024-11-07T09:43:20.798Z]         ],
+[2024-11-07T09:43:20.799Z]         "SupportedRuntimeVersions": [
+[2024-11-07T09:43:20.800Z]           "3.7",
+[2024-11-07T09:43:20.800Z]           "3.8",
+[2024-11-07T09:43:20.801Z]           "3.9",
+[2024-11-07T09:43:20.801Z]           "3.10",
+[2024-11-07T09:43:20.802Z]           "3.11",
+[2024-11-07T09:43:20.802Z]           "3.12"
+[2024-11-07T09:43:20.803Z]         ],
+[2024-11-07T09:43:20.803Z]         "SanitizeRuntimeVersionRegex": null,
+[2024-11-07T09:43:20.804Z]         "WorkerIndexing": "true",
+[2024-11-07T09:43:20.804Z]         "Extensions": [
+[2024-11-07T09:43:20.805Z]           ".py"
+[2024-11-07T09:43:20.805Z]         ],
+[2024-11-07T09:43:20.805Z]         "UseStdErrorStreamForErrorsOnly": false,
+[2024-11-07T09:43:20.806Z]         "DefaultExecutablePath": "python",
+[2024-11-07T09:43:20.806Z]         "DefaultWorkerPath": "C:\\Program Files\\Microsoft\\Azure Functions Core Tools\\workers\\python\\3.11/WINDOWS/X64/worker.py",
+[2024-11-07T09:43:20.807Z]         "WorkerDirectory": "C:\\Program Files\\Microsoft\\Azure Functions Core Tools\\workers\\python",
+[2024-11-07T09:43:20.807Z]         "Arguments": [],
+[2024-11-07T09:43:20.807Z]         "WorkerArguments": null,
+[2024-11-07T09:43:20.808Z]         "IsDisabled": null
+[2024-11-07T09:43:20.808Z]       },
+[2024-11-07T09:43:20.809Z]       "Arguments": {
+[2024-11-07T09:43:20.809Z]         "ExecutablePath": "python",
+[2024-11-07T09:43:20.810Z]         "ExecutableArguments": [],
+[2024-11-07T09:43:20.810Z]         "WorkerPath": "C:\\Program Files\\Microsoft\\Azure Functions Core Tools\\workers\\python\\3.11/WINDOWS/X64/worker.py",
+[2024-11-07T09:43:20.811Z]         "WorkerArguments": []
+[2024-11-07T09:43:20.811Z]       },
+[2024-11-07T09:43:20.811Z]       "CountOptions": {
+[2024-11-07T09:43:20.812Z]         "SetProcessCountToNumberOfCpuCores": false,
+[2024-11-07T09:43:20.812Z]         "ProcessCount": 1,
+[2024-11-07T09:43:20.813Z]         "MaxProcessCount": 10,
+[2024-11-07T09:43:20.813Z]         "ProcessStartupInterval": "00:00:10",
+[2024-11-07T09:43:20.814Z]         "ProcessStartupTimeout": "00:01:00",
+[2024-11-07T09:43:20.814Z]         "InitializationTimeout": "00:00:10",
+[2024-11-07T09:43:20.814Z]         "EnvironmentReloadTimeout": "00:00:30",
+[2024-11-07T09:43:20.815Z]         "ProcessRestartInterval": "00:00:10",
+[2024-11-07T09:43:20.816Z]         "ProcessShutdownTimeout": "00:00:10"
+[2024-11-07T09:43:20.816Z]       }
+[2024-11-07T09:43:20.817Z]     }
+[2024-11-07T09:43:20.818Z]   ]
+[2024-11-07T09:43:20.818Z] }
+[2024-11-07T09:43:20.819Z] FunctionResultAggregatorOptions
+[2024-11-07T09:43:20.819Z] {
+[2024-11-07T09:43:20.820Z]   "BatchSize": 1000,
+[2024-11-07T09:43:20.820Z]   "FlushTimeout": "00:00:30",
+[2024-11-07T09:43:20.821Z]   "IsEnabled": true
+[2024-11-07T09:43:20.821Z] }
+[2024-11-07T09:43:20.822Z] ConcurrencyOptions
+[2024-11-07T09:43:20.822Z] {
+[2024-11-07T09:43:20.822Z]   "DynamicConcurrencyEnabled": false,
+[2024-11-07T09:43:20.823Z]   "MaximumFunctionConcurrency": 500,
+[2024-11-07T09:43:20.824Z]   "CPUThreshold": 0.8,
+[2024-11-07T09:43:20.824Z]   "SnapshotPersistenceEnabled": true
+[2024-11-07T09:43:20.824Z] }
+[2024-11-07T09:43:20.825Z] SingletonOptions
+[2024-11-07T09:43:20.826Z] {
+[2024-11-07T09:43:20.826Z]   "LockPeriod": "00:00:15",
+[2024-11-07T09:43:20.827Z]   "ListenerLockPeriod": "00:00:15",
+[2024-11-07T09:43:20.827Z]   "LockAcquisitionTimeout": "10675199.02:48:05.4775807",
+[2024-11-07T09:43:20.828Z]   "LockAcquisitionPollingInterval": "00:00:05",
+[2024-11-07T09:43:20.828Z]   "ListenerLockRecoveryPollingInterval": "00:01:00"
+[2024-11-07T09:43:20.829Z] }
+[2024-11-07T09:43:20.829Z] ScaleOptions
+[2024-11-07T09:43:20.830Z] {
+[2024-11-07T09:43:20.830Z]   "ScaleMetricsMaxAge": "00:02:00",
+[2024-11-07T09:43:20.831Z]   "ScaleMetricsSampleInterval": "00:00:10",
+[2024-11-07T09:43:20.832Z]   "MetricsPurgeEnabled": true,
+[2024-11-07T09:43:20.832Z]   "IsTargetScalingEnabled": true,
+[2024-11-07T09:43:20.833Z]   "IsRuntimeScalingEnabled": false
+[2024-11-07T09:43:20.833Z] }
+[2024-11-07T09:43:20.834Z] Starting JobHost
+[2024-11-07T09:43:20.835Z] Starting Host (HostId=desktopj6mml19-2034108659, InstanceId=659783ef-3174-48cf-a22d-e8d36e1fb207, Version=4.1036.1.23224, ProcessId=34420, AppDomainId=1, InDebugMode=False, InDiagnosticMode=False, FunctionsExtensionVersion=(null))
+[2024-11-07T09:43:20.836Z] Loading functions metadata
+[2024-11-07T09:43:20.836Z] Worker indexing is enabled
+[2024-11-07T09:43:20.837Z] Fetching metadata for workerRuntime: python
+[2024-11-07T09:43:20.837Z] Reading functions metadata (Worker)
+[2024-11-07T09:43:20.838Z] Reading functions metadata (Custom)
+[2024-11-07T09:43:20.839Z] 0 functions found (Custom)
+[2024-11-07T09:43:20.839Z] 1 functions loaded
+[2024-11-07T09:43:20.841Z] Generating 1 job function(s)
+[2024-11-07T09:43:20.841Z] Worker process started and initialized.
+[2024-11-07T09:43:20.842Z] Received WorkerLoadRequest, request ID c9579a3b-52e3-44e9-ac53-0d16b775a4d1, function_id: 757a0008-59d9-5d89-92d6-4b0e7c194baf,function_name: TextToSpeech, function_app_directory : C:\Users\LauraKhadas\Downloads\Azure\Azure Portfolio Projects\azure_text_to_speech_project_final
+[2024-11-07T09:43:20.843Z] Successfully processed FunctionLoadRequest, request ID: c9579a3b-52e3-44e9-ac53-0d16b775a4d1, function ID: 757a0008-59d9-5d89-92d6-4b0e7c194baf,function Name: TextToSpeech,programming model: V2
+[2024-11-07T09:43:20.845Z] Found the following functions:
+[2024-11-07T09:43:20.846Z] Host.Functions.TextToSpeech
+[2024-11-07T09:43:20.846Z] 
+[2024-11-07T09:43:20.847Z] HttpOptions
+[2024-11-07T09:43:20.847Z] Initializing function HTTP routes
+[2024-11-07T09:43:20.848Z] {
+[2024-11-07T09:43:20.849Z] Mapped function route 'api/TextToSpeech' [POST] to 'TextToSpeech'
+[2024-11-07T09:43:20.849Z]   "DynamicThrottlesEnabled": false,
+[2024-11-07T09:43:20.850Z] 
+[2024-11-07T09:43:20.850Z]   "EnableChunkedRequestBinding": false,
+[2024-11-07T09:43:20.851Z] Host initialized (15ms)
+[2024-11-07T09:43:20.851Z]   "MaxConcurrentRequests": -1,
+[2024-11-07T09:43:20.852Z] Host started (16ms)
+[2024-11-07T09:43:20.853Z]   "MaxOutstandingRequests": -1,
+[2024-11-07T09:43:20.854Z] Job host started
+[2024-11-07T09:43:20.854Z]   "RoutePrefix": "api"
+[2024-11-07T09:43:20.855Z] }
+[2024-11-07T09:43:20.855Z] Host restarted.
